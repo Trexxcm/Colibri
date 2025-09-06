@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Colibri.Views.SignUp"
+             Title="SignUp">
+    
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" >
+        
+        <Label FontSize="30"
+         FontAttributes="Bold"
+         HorizontalOptions="Center"
+         Margin="0,10">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Iniciar "
+                        TextColor="Black"
+                        FontSize="30"
+                        FontAttributes="Bold"/>
+                        <Span Text="Sesión"
+                        TextColor="#35b57d"
+                        FontSize="30"
+                        FontAttributes="Bold"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <VerticalStackLayout >
+            
+           <Entry x:Name="txtUser"
+               Placeholder="Correo"
+               />
+
+            <Entry x:Name="txtPassword"
+               Placeholder="Contraseña"
+               IsPassword="True"
+              />
+        
+            <Label
+              Text="Olvide mi contraseña"
+              TextColor="#35b57d"
+              FontSize="14"
+              HorizontalTextAlignment="Center"
+              Margin="0,5"
+              />
+            
+            <Label 
+              Text="o"
+              TextColor="#000"
+              FontSize="14"
+              HorizontalTextAlignment="Center"
+              Margin="0,5"
+              />
+            
+            <Button Text="Iniciar"
+                />
+
+            <Button Text="Iniciar con Google"
+                Style="{StaticResource GoogleButton}" 
+                />
+            
+        </VerticalStackLayout>
+ 
+
+
+    </VerticalStackLayout>
+    
+</ContentPage>
